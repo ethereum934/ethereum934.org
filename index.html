@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+  Eventually by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150266116-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150266116-1');
+    </script>
+
+    <title>Ethereum 9¾: Send your ERC20 privately</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="description" content="Ethereum 9 3/4 is the Mimblewimble implementation on Ethereum">
+    <meta name="keywords"
+          content="Mimblewimble, Ethereum, 9 3/4, Privacy, Roll up, SNARKs, ZKP, Pedersen, MMR, Merkle Mountain Range">
+    <meta name="author" content="Wanseob Lim">
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+
+<body class="is-preload">
+
+<!-- Header -->
+<header id="header">
+    <h1>Ethereum 9¾</h1>
+    <p>
+        You can enter into the magical world by depositing ERC20 tokens to Ethereum 9¾.<br/>
+        And then, use Mimblewimble spells to send your tokens privately.<br/>
+        If you submit a valid proof, you can withdraw your tokens back to the muggle world.
+        <br/>
+    </p>
+</header>
+
+<!-- Signup Form -->
+<!-- Begin Mailchimp Signup Form -->
+<form id="signup-form"
+      action="https://wanseob.us20.list-manage.com/subscribe/post?u=01e4571c01d51c6deeb182bbd&amp;id=6ecb6f402c"
+      method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                                                                              name="b_01e4571c01d51c6deeb182bbd_6ecb6f402c"
+                                                                              tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                              class="button"></div>
+</form>
+<div class="container">
+    <h4>Introduction</h4>
+    <p>
+        Using crypto money in our daily lives is still a future until we split the bill by using DAI and Metamask rather
+        than using Venmo. One of the causes of this situation is the privacy problem; especially, as many people start
+        to use ENS, we are experiencing the privacy-less world. Representatively, through Etherscan, we can quickly
+        check an ENS owner’s ETH balance, where the money comes from, or even how much is lent from MakerDAO. It makes
+        us hesitate to share ENS and send crypto money to each other. To solve this problem, Ethereum 9¾ comes up as a
+        protocol to send ERC20 privately in a cost-effective way using Mimblewimble and zk-SNARKs.
+
+        Ethereum 9¾ is a construction of Mimblewimble, Pedersen hash, Merkle Mountain Range(MMR), and (optimistic)
+        roll-up with zk-SNARKs. Using both concepts of ZCash’s commitment-nullifier scheme and Mimblewimble protocol
+        together on Ethereum, it hides the transaction details and the token flow while guaranteeing no money is printed
+        out of thin air. Also, Pedersen Hash and Merkle Mountain Range reduce the gas costs and allow rolling up 64
+        items at once.
+
+        Through this construction, it achieves a cost effective private transaction by the optimistic roll-up which
+        supports a deterministic fraud-proof without any data availability problem. Moreover, as relayers can aggregate
+        transactions and accept fees in ERC20 by the Mimblewimble protocol, it is expected to see new DAOs and De-Fi
+        products using Ethereum 9¾.
+    </p>
+    <h4>Technical details</h4>
+    <p>
+        Check out the PoC source codes on <strong><a href="https://github.com/ethereum934/eth-mimblewimble"
+                                                     target="_blank">github</a></strong><br/>
+        Read the full document on the <strong><a
+            href="https://ethresear.ch/t/ethereum-9-send-erc20-privately-using-mimblewimble-and-zk-snarks/6217">ethresear.ch</a></strong><br/>
+    </p>
+    <h4 class="codestyle">Contributions</h4>
+    <p>
+        Goblins are building a <b>Swarm & Whisper based Mimblewimble wallet</b> for Ethereum. Make a donation to help
+        and support Goblins to bring some cool stuffs to Ethereans.<br/>
+        <a class="btn codestyle" data-clipboard-target="#fund"
+           onclick="alert('Copied address to the clipboard. Appreciate your help.')" id="fund">0x5B619A6cd352648D080e3006f7881571F5E1Cb0B</a>(Click
+        to copy the Ethereum address.)
+    </p>
+    <p>
+        Or if you want to be a part of the goblins, please leave a message via <strong><a
+            href="https://ethresear.ch/t/ethereum-9-send-erc20-privately-using-mimblewimble-and-zk-snarks/6217">ethresear.ch</a></strong>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer class="sans" id="footer">
+    <ul class="icons">
+        <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
+        <!-- <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li> -->
+        <!-- <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li> -->
+    </ul>
+    <ul class="copyright">
+        <li>This project is under the <a href="https://opensource.org/licenses/LGPL-3.0">LGPL-3.0</a> license.</li>
+    </ul>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/clipboard.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
