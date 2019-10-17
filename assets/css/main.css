@@ -98,7 +98,7 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 1920px) {
   html, body {
     height: auto;
     min-height: 100%;
@@ -1067,7 +1067,7 @@ button,
     left: 1.25em;
   }
 }
-@media screen and (max-height: 640px) {
+@media screen and (max-height: 1920px) {
   #footer {
     bottom: auto;
     left: auto;
