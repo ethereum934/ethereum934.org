@@ -26,7 +26,7 @@
     <meta name="description" content="Ethereum 9 3/4 is the Mimblewimble implementation on Ethereum">
     <meta name="keywords"
           content="Mimblewimble, Ethereum, 9 3/4, Privacy, Roll up, SNARKs, ZKP, Pedersen, MMR, Merkle Mountain Range">
-    <meta name="author" content="Wanseob Lim">
+    <meta name="author" content="Wanseob Lim, Albert Chon">
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
 
@@ -36,8 +36,8 @@
 <header id="header">
     <h1>Ethereum 9¾</h1>
     <p>
-        You can enter into the magical world by depositing ERC20 tokens to Ethereum 9¾.<br/>
-        And then, use Mimblewimble spells to send your tokens privately.<br/>
+        Enter the magical world by depositing ERC20 tokens to Ethereum 9¾.<br/>
+        You can then use Mimblewimble spells to send your tokens privately.<br/>
         If you submit a valid proof, you can withdraw your tokens back to the muggle world.
         <br/>
     </p>
@@ -59,41 +59,35 @@
 <div class="container">
     <h4>Introduction</h4>
     <p>
-        Using crypto money in our daily lives is still a future until we split the bill by using DAI and Metamask rather
-        than using Venmo. One of the causes of this situation is the privacy problem; especially, as many people start
-        to use ENS, we are experiencing the privacy-less world. Representatively, through Etherscan, we can quickly
-        check an ENS owner’s ETH balance, where the money comes from, or even how much is lent from MakerDAO. It makes
-        us hesitate to share ENS and send crypto money to each other. To solve this problem, Ethereum 9¾ comes up as a
-        protocol to send ERC20 privately in a cost-effective way using Mimblewimble and zk-SNARKs.
+        Today in the muggle world, we are still far away from using crypto as money for payments in our daily lives. One reason people do not use DAI and Metamask like we use Venmo today is due to privacy. To receive money from someone, you have to tell them your Ethereum address, which instantly reveals your account balance and all of your past transactions, making us hesitate to send crypto to each other. 
+
+        Ethereum 9¾ solves this problem by allowing you to send ERC20 privately in a cost-effective way using Mimblewimble and zk-SNARKs.
 
         Ethereum 9¾ is a construction of Mimblewimble, Pedersen hash, Merkle Mountain Range(MMR), and (optimistic)
-        roll-up with zk-SNARKs. Using both concepts of ZCash’s commitment-nullifier scheme and Mimblewimble protocol
-        together on Ethereum, it hides the transaction details and the token flow while guaranteeing no money is printed
-        out of thin air. Also, Pedersen Hash and Merkle Mountain Range reduce the gas costs and allow rolling up 64
-        items at once.
+        roll-up with zk-SNARKs. Using both concepts of ZCash’s commitment-nullifier scheme and the Mimblewimble protocol
+        together on Ethereum, you can hide your transaction details and conceal your token flow. Our protocol guarantees that no money is printed out of thin air and is gas efficient thanks to Pedersen Hashes, Merkle Mountain Ranges and optimistic rollup.
 
-        Through this construction, it achieves a cost effective private transaction by the optimistic roll-up which
-        supports a deterministic fraud-proof without any data availability problem. Moreover, as relayers can aggregate
-        transactions and accept fees in ERC20 by the Mimblewimble protocol, it is expected to see new DAOs and De-Fi
-        products using Ethereum 9¾.
+        Through this construction, we achieve cost-effective private transactions by optimistic roll-up, which
+        supports deterministic fraud-proofs without any data availability issues. 
     </p>
     <h4>Technical details</h4>
     <p>
-        Check out the PoC source codes on <strong><a href="https://github.com/ethereum934/eth-mimblewimble"
-                                                     target="_blank">github</a></strong><br/>
+        Check out our PoC source code on <strong><a href="https://github.com/ethereum934/eth-mimblewimble"
+                                                     target="_blank">Github</a></strong><br/>
         Read the full document on the <strong><a
             href="https://ethresear.ch/t/ethereum-9-send-erc20-privately-using-mimblewimble-and-zk-snarks/6217">ethresear.ch</a></strong><br/>
     </p>
     <h4 class="codestyle">Contributions</h4>
     <p>
-        Goblins are building a <b>Swarm & Whisper based Mimblewimble wallet</b> for Ethereum. Make a donation to help
-        and support Goblins to bring some cool stuffs to Ethereans.<br/>
+        Join the elite <b>Wizard's Club</b> and help us build the Ethereum 9¾ Goblin Network. 
+        
+        Find us on <a href="https://discord.gg/kuGGVg">Discord</a>, <a href="https://t.me/joinchat/IIxR2xRzwzLXlsRonaMdug">Telegram</a>, and <a href="https://ethresear.ch/t/ethereum-9-send-erc20-privately-using-mimblewimble-and-zk-snarks/6217">ethresear.ch</a>
+        
+        You can also make a donation to help fund the development of Ethereum 9¾ and support a fellow Wizard to bring some cool stuffs to Ethereans.<br/>
         <a class="btn codestyle" data-clipboard-target="#fund"
            onclick="alert('Copied address to the clipboard. Appreciate your help.')" id="fund">0x5B619A6cd352648D080e3006f7881571F5E1Cb0B</a>(Click
         to copy the Ethereum address.)
         <br/>
-        Or if you want to be a part of the goblins, please leave a message via <strong><a
-            href="https://ethresear.ch/t/ethereum-9-send-erc20-privately-using-mimblewimble-and-zk-snarks/6217">ethresear.ch</a></strong>
     </p>
 </div>
 
